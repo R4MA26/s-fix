@@ -22,9 +22,9 @@
                                 <div class="mb-3">
                                     <a href="{{ route('jurnal-umum.create') }}?page={{ request('page') }}" class="btn btn-success" title="Tambah" data-toggle="tooltip"><i class="fas fa-plus"></i></a>
                                     {{-- <a href="#laporan" id="btn-laporan" data-toggle="tooltip" class="btn btn-primary" title="Laporan"><i class="fas fa-calendar"></i></a> --}}
-                                    <button type="button" data-toggle="tooltip" title="Hapus data terpilih" class="btn btn-danger" id="delete" name="delete" >
+                                    {{-- <button type="button" data-toggle="tooltip" title="Hapus data terpilih" class="btn btn-danger" id="delete" name="delete" >
                                         <i class="fas fa-trash"></i>
-                                    </button>
+                                    </button> --}}
                                 </div>
                             </div>
                         </div>

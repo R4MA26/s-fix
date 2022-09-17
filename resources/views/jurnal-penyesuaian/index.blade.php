@@ -23,9 +23,9 @@
                             </div>
                             <div class="mb-3">
                                 <a href="#laporan" id="btn-laporan" data-toggle="tooltip" class="btn btn-primary" title="Laporan"><i class="fas fa-calendar"></i></a>
-                                <button type="button" data-toggle="tooltip" title="Hapus data terpilih" class="btn btn-danger" id="delete" name="delete" >
+                                {{-- <button type="button" data-toggle="tooltip" title="Hapus data terpilih" class="btn btn-danger" id="delete" name="delete" >
                                     <i class="fas fa-trash"></i>
-                                </button>
+                                </button> --}}
                                 <a href="{{ route('jurnal-penyesuaian.create') }}?page={{ request('page') }}" class="btn btn-success" title="Tambah" data-toggle="tooltip"><i class="fas fa-plus"></i></a>
                             </div>
                         </div>
@@ -61,7 +61,7 @@
                                 </td>
                                 <td style="vertical-align: middle">
                                     <a href="{{ route('jurnal-penyesuaian.edit', $item) }}?page={{ request('page') }}" class="btn btn-sm btn-success" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></a>
-                                    <a class="btn btn-sm btn-danger hapus-data" data-nama="{{ $item->keterangan }}" data-action="{{ route("jurnal-penyesuaian.destroy", $item) }}" data-toggle="tooltip" title="Hapus" href="#modal-hapus"><i class="fas fa-trash"></i></a>
+                                    {{-- <a class="btn btn-sm btn-danger hapus-data" data-nama="{{ $item->keterangan }}" data-action="{{ route("jurnal-penyesuaian.destroy", $item) }}" data-toggle="tooltip" title="Hapus" href="#modal-hapus"><i class="fas fa-trash"></i></a> --}}
                                     @if($item->bukti)<a href="{{ route('jurnal-penyesuaian.show', $item) }}" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Download Bukti"><i class="fas fa-download"></i></a>@endif
                                 </td>
                                 <td style="vertical-align: middle; text-align: center">{{ tgl($item->tanggal) }}</td>

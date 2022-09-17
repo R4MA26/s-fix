@@ -5,8 +5,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Brand -->
-        <a class="navbar-brand pt-0 font-weight-900 text-primary" style="font-size: 20pt" href="{{ route('home') }}">
-            PT. TBGS
+        <a class="navbar-brand pt-0 font-weight-900 text-primary" style="font-size: 10pt" href="{{ route('home') }}">
+            PT. Tiga Bintang Griyasaranas
             {{-- <img src="{{ asset('argon') }}/img/brand/blue.png" class="navbar-brand-img" alt="..."> --}}
         </a>
         <!-- User -->
@@ -46,7 +46,7 @@
                             {{-- <img src="{{ asset('argon') }}/img/brand/blue.png"> --}}
                         </a>
                         <a class="navbar-brand pt-0 font-weight-900 text-primary" style="font-size: 20pt" href="{{ route('home') }}">
-                            PT. TBGS
+                            PT. Tiga Bintang Griyasarana
                             {{-- <img src="{{ asset('argon') }}/img/brand/blue.png" class="navbar-brand-img" alt="..."> --}}
                         </a>
                     </div>
@@ -64,37 +64,37 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link {{ request()->segment(1) == 'akun' ? 'active' : '' }}" href="{{ route('akun.index') }}">
-                        <i class="ni ni-bullet-list-67 text-success"></i> {{ __('Akun') }}
+                        <i class="ni ni-books text-info"></i> {{ __('Akun') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->segment(1) == 'jurnal-umum' ? 'active' : '' }}" href="{{ route('jurnal-umum.index') }}">
-                        <i class="ni ni-bullet-list-67 text-info"></i> {{ __('Transaksi') }}
+                        <i class="ni ni-money-coins text-info"></i> {{ __('Transaksi') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('transaksi.index') }}">
-                        <i class="ni ni-bullet-list-67 text-info"></i> {{ __('Jurnal Umum') }}
+                        <i class="ni ni-collection text-info"></i> {{ __('Jurnal Umum') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->segment(1) == 'jurnal-penyesuaian' ? 'active' : '' }}" href="{{ route('jurnal-penyesuaian.index') }}">
-                        <i class="ni ni-bullet-list-67 text-indigo"></i> {{ __('Jurnal Penyesuaian') }}
+                        <i class="ni ni-credit-card text-indigo"></i> {{ __('Jurnal Penyesuaian') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->segment(1) == 'buku-besar' ? 'active' : '' }}" href="{{ url('/buku-besar') }}{{ App\Models\Akun::orderBy('kode')->first() ? '?kode_akun=' . App\Models\Akun::orderBy('kode')->first()->kode . '&kriteria=periode&periode=1-bulan-terakhir' : '' }}">
-                        <i class="ni ni-bullet-list-67 text-yellow"></i> {{ __('Buku Besar') }}
+                        <i class="ni ni-book-bookmark text-yellow"></i> {{ __('Buku Besar') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->segment(1) == 'neraca-lajur' ? 'active' : '' }}" href="{{ route('neraca-lajur.index') }}">
-                        <i class="ni ni-bullet-list-67 text-warning"></i> {{ __('Neraca Lajur') }}
+                        <i class="ni ni-chart-bar-32 text-warning"></i> {{ __('Neraca Lajur') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->segment(1) == 'laporan' ? 'active' : '' }}" href="#laporan" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="laporan">
-                        <i class="ni ni-bullet-list-67 text-gray"></i> {{ __('Laporan') }}
+                        <i class="ni ni-folder-17 text-gray"></i> {{ __('Laporan') }}
                     </a>
                     <div class="collapse {{ request()->segment(1) == 'laporan' ? 'show' : '' }}" id="laporan">
                         <ul class="nav nav-sm flex-column">
